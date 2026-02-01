@@ -1,53 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>AI Tool – Smart Automation</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
 
 <header class="hero">
   <nav class="nav">
-    <h2>AI TOOL</h2>
-    <a href="#pricing" class="btn">Get Started</a>
+    <h2>BizAI</h2>
   </nav>
 
   <div class="hero-content">
-    <h1>Automate Your Work with AI</h1>
-    <p>Save hours every day using our intelligent AI-powered solution.</p>
-    <a href="#pricing" class="btn primary">Try Now</a>
+    <h1>Automate Business Tasks with AI</h1>
+    <p>Generate professional emails, reports, and summaries in seconds.</p>
   </div>
 </header>
 
-<section class="features">
-  <h2>Why Choose Our AI?</h2>
-  <div class="feature-grid">
-    <div>⚡ Fast & Accurate</div>
-    <div>🤖 AI Powered</div>
-    <div>📈 Business Ready</div>
-    <div>🔒 Secure</div>
-  </div>
-</section>
+<section class="tool">
+  <h2>Business Automation Tool</h2>
 
-<section class="pricing" id="pricing">
-  <h2>Simple Pricing</h2>
-  <div class="pricing-box">
-    <h3>Pro Plan</h3>
-    <p class="price">₹2,499 / month</p>
-    <ul>
-      <li>Unlimited usage</li>
-      <li>Priority support</li>
-      <li>Commercial license</li>
-    </ul>
-    <button class="btn primary">Buy Now</button>
+  <select id="task">
+    <option value="email">Generate Business Email</option>
+    <option value="report">Generate Business Report</option>
+    <option value="summary">Summarize Content</option>
+  </select>
+
+  <textarea id="inputText" placeholder="Enter details here..."></textarea>
+
+  <button onclick="generate()">Generate with AI</button>
+
+  <div class="output" id="output">
+    AI output will appear here...
   </div>
 </section>
 
 <footer>
-  <p>© 2026 AI Tool. All rights reserved.</p>
+  <p>© 2026 BizAI. All rights reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
-</html>
