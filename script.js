@@ -2,6 +2,7 @@ function generate() {
   const task = document.getElementById("task").value;
   const input = document.getElementById("inputText").value;
   const output = document.getElementById("output");
+  const res = await fetch("https://bizai-backend.ahmed415201.workers.dev", {
 
   if (!input.trim()) {
     output.innerText = "Please enter some details.";
